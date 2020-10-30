@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded',() => {
         cardsChosen=[];
         cardsChosenId=[];
         finalScore.textContent=cardsWon.length;
-        if(cardsWon.length === cardsArray.length/2)
+        if(cardsWon.length == Math.round(cardsArray.length/2))
         {        
             finalScore.textContent='Congratulations! All matches found ';
         }
