@@ -77,14 +77,14 @@ document.addEventListener('DOMContentLoaded',() => {
         var cards =document.querySelectorAll('img');
         const option1Id=cardsChosenId[0];
         const option2Id=cardsChosenId[1];
-        if(option1Id===option2Id)
+        if(option1Id == option2Id)
         {
             cards[option1Id].setAttribute('src','images/grey_back.png');
             cards[option2Id].setAttribute('src','images/grey_back.png');
             alert('You clicked the same image twice');
         }
         else
-        if(cardsChosen[0]===cardsChosen[1])
+        if(cardsChosen[0] === cardsChosen[1])
         {
             alert('Match Found');
             cards[option1Id].setAttribute('src','images/gray_back.png');
@@ -100,13 +100,13 @@ document.addEventListener('DOMContentLoaded',() => {
             alert('Try Again');
 
         }
-    cardsChosen=[];
-    cardsChosenId=[];
-    finalScore.textContent=cardsWon.length;
-    if(cardsWon.length === cardsArray.length/2)
-    {        
-        finalScore.textContent='Congratulations! All matched found ';
-    }
+        cardsChosen=[];
+        cardsChosenId=[];
+        finalScore.textContent=cardsWon.length;
+        if(cardsWon.length === cardsArray.length/2)
+        {        
+            finalScore.textContent='Congratulations! All matches found ';
+        }
         
     }
 
